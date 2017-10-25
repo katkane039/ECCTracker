@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" prefHeight="550.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminUserController">
+	<!-- TODO Add Nodes -->
+ 
+       <AnchorPane maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="550.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+ 
+            <AnchorPane focusTraversable="true" prefHeight="550.0" prefWidth="538.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+               <ImageView fitHeight="435.0" fitWidth="538.0" layoutY="115.0" pickOnBounds="true">
+                  <image>
+                     <Image url="@../Images/493768296.jpg" />
+                  </image>
+               </ImageView>
+           
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a390" height="116.0" stroke="#ffffff00" strokeType="INSIDE" width="538.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Text fill="WHITE" layoutX="199.0" layoutY="82.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Tracker">
+               <font>
+                  <Font name="Adam Warren pro" size="72.0" />
+               </font>
+            </Text>
+            <Text fill="#abda59" layoutX="37.0" layoutY="79.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="ECC">
+               <font>
+                  <Font name="Adam Warren pro" size="64.0" />
+               </font>
+            </Text>
+               <AnchorPane layoutX="64.0" layoutY="275.0" prefWidth="460.0">
+                  <children>
+                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="-17.0" layoutY="-64.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="5.0" width="445.0" />
+                     <GridPane prefHeight="89.0" prefWidth="410.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="192.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="33.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Class Name:">
+                              <font>
+                                 <Font name="Javanese Text" size="18.0" />
+                              </font>
+                           </Text>
+                           <TextField fx:id="admin_uid" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                           <Text layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter UID no:" GridPane.columnIndex="2">
+                              <font>
+                                 <Font name="Javanese Text" size="18.0" />
+                              </font>
+                           </Text>
+                           <Button mnemonicParsing="false" onAction="#classSelect" text="Enter" GridPane.rowIndex="4" />
+                           <Button mnemonicParsing="false" onAction="#uidSelect" text="Enter" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                           <ComboBox fx:id="comboBox" prefWidth="150.0" promptText="Class Name" GridPane.rowIndex="2" />
+                           
+                        </children>
+                     </GridPane>
+                     <Text fill="WHITE" layoutX="-78.0" layoutY="-33.0" stroke="#00a390" strokeType="OUTSIDE" strokeWidth="2.0" text="Welcome Admin!" textAlignment="CENTER" wrappingWidth="567.0000050961971">
+                        <font>
+                           <Font name="Britannic Bold" size="27.0" />
+                        </font>
+                     </Text>
+                     <Line endX="200.0" endY="120.0" startX="200.0" startY="-10.0" stroke="#abda59" strokeWidth="3.0" />
+                  </children>
+               </AnchorPane>
+               <Button layoutX="230.0" layoutY="441.0" mnemonicParsing="false" onAction="#viewClassStatistics" text="Statistics" />
+           
+             </children>
+         
+            </AnchorPane>
+   </children>
+   </AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   </GridPane>

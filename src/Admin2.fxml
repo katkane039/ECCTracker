@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" prefHeight="550.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminUidViewController">
+   
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="538.0">
+         <children>
+            <ImageView fitHeight="435.0" fitWidth="538.0" layoutY="115.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/493768296.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a390" height="116.0" stroke="#ffffff00" strokeType="INSIDE" width="538.0" />
+            <Text fill="WHITE" layoutX="186.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tracker">
+               <font>
+                  <Font name="Adam Warren pro" size="72.0" />
+               </font>
+            </Text>
+            <Text fill="#abda59" layoutX="27.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECC">
+               <font>
+                  <Font name="Adam Warren pro" size="64.0" />
+               </font>
+            </Text>
+            <Button disable="true" layoutX="44.0" layoutY="115.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="23.0" visible="false">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <!-- <Button layoutX="88.0" layoutY="115.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="23.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button> -->
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="23.0" translateY="115.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="68.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="316.0" layoutX="56.0" layoutY="187.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="6.0" width="427.0" />
+            <ImageView fx:id="img_card1" fitHeight="116.0" fitWidth="148.0" layoutX="63.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../Images/IMG_0731.JPG" />
+               </image>
+            </ImageView>
+            <Text fx:id="name_card" layoutX="140.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiana Chimbaikar" wrappingWidth="260.703126847744">
+               <font>
+                  <Font name="Perpetua" size="40.0" />
+               </font>
+            </Text>
+            <Line endX="480.0" endY="240.0" startX="60.0" startY="240.0" stroke="#abda59" strokeWidth="3.0" />
+            <AnchorPane layoutX="234.0" layoutY="268.0" prefHeight="104.0" prefWidth="200.0">
+               <children>
+                  <GridPane prefHeight="71.0" prefWidth="170.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UID:">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Roll no:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="uid_card" strokeType="OUTSIDE" strokeWidth="0.0" text="155221" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="roll_card" strokeType="OUTSIDE" strokeWidth="0.0" text="9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="class_card" strokeType="OUTSIDE" strokeWidth="0.0" text="SYIT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="98.0" layoutX="-15.0" layoutY="-13.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="3.0" width="200.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="225.0" layoutY="372.0" prefHeight="104.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#60e010a6" height="80.0" layoutX="-15.0" layoutY="-2.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="3.0" width="229.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb1e1ea5" height="80.0" layoutX="-15.0" layoutY="-2.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="3.0" width="229.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff541a6" height="80.0" layoutX="-15.0" layoutY="-2.0" stroke="#abda59" strokeType="INSIDE" strokeWidth="3.0" width="229.0" />
+                  <GridPane prefHeight="71.0" prefWidth="219.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="162.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="57.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hours Completed:">
+                           <font>
+                              <Font name="Poor Richard" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Remaining Hours:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="hrscomp" strokeType="OUTSIDE" strokeWidth="0.0" text="50" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="hrsleft" strokeType="OUTSIDE" strokeWidth="0.0" text="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Poor Richard" size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="243.0" layoutY="464.0" mnemonicParsing="false" onAction="#updateHours" text="Update" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
